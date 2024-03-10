@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 
 const Welcome = () => {
-    const msg = "Hello RseeTech";
+    const [message, setMessage] = useState("Hello RseeTech");
     const isLoggedIn = false;
 
     /* useEffect(() => {
         if(isLoggedIn){
-            setMsg("Hello RseeTech");
+            setMessage("Hello RseeTech Again");
         } else {
-            setMsg("Hello Guest");
+            setMessage("Hello Guest");
         }
-    },[isLoggedIn]); */
+    }); */
 
     return (
-        <>
-            <h1>
-                {isLoggedIn && msg }
-            </h1>
-        </>
+        <div>
+            <h2>
+                {isLoggedIn &&  message}
+            </h2>
+        </div>
     )
 };
 
